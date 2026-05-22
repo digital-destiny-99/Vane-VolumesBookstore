@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>About Us - Book Haven Bookstore</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img
+          src="Assets/logo1.png"
+          alt="Book Haven Book Store Logo"
+          width="80"
+        />
+        <h1>Book Haven Book Store</h1>
+        <p><em>A whimsical book nook for curious minds...</em></p>
+      </div>
+
+      <nav>
+        <div id="fullmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="custom.html">Community</a></li>
+          </ul>
+        </div>
+
+        <div id="burgermenu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="2em"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+
+          <ul id="burgermenulinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="custom.html">Community</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <section>
+        <h2>About Book Haven Book Store</h2>
+        <p>
+          Book Haven Book Store is a welcoming bookstore for readers, students,
+          collectors and lifelong learners. Our store offers a thoughtfully
+          curated selection of books, journals, magazines, study materials and
+          reading gifts that support both personal enjoyment and academic
+          growth.
+        </p>
+
+        <p>
+          We focus on making book discovery feel personal and approachable.
+          Along with popular reading options, we also offer specialty
+          selections, rare finds and custom order support for customers
+          searching for a specific title or gift.
+        </p>
+      </section>
+
+      <section>
+        <h2>Our Atmosphere</h2>
+        <p>
+          During the day, Book Haven provides a calm and organized space for
+          browsing, studying and reading. In the evening, the store shifts into
+          a quieter, more reflective environment for events, book discussions
+          and focused reading time.
+        </p>
+
+        <p>
+          We host select community events such as reading sessions, book club
+          meetings and writing circles to encourage connection among local
+          readers and creatives.
+        </p>
+      </section>
+
+      <section>
+        <h2>Hours of Operation</h2>
+        <table class="hours-table">
+          <tr>
+            <th>Day</th>
+            <th>Hours</th>
+          </tr>
+          <tr>
+            <td>Monday - Friday</td>
+            <td>9am - 8pm</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>10am - 6pm</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>11am - 5pm</td>
+          </tr>
+        </table>
+
+        <p><em>Special evening events are announced weekly.</em></p>
+      </section>
+
+      <section>
+        <h2>Contact Us & Custom Orders</h2>
+
+        <p>
+          Looking for a rare book, a specific title or a thoughtful gift? Send
+          us a message below and we will help you with questions, product
+          requests or custom order needs.
+        </p>
+
+        <form id="custom-order-form">
+          <label for="customer-name">Name:</label><br />
+          <input type="text" id="customer-name" required /><br /><br />
+
+          <label for="customer-email">Email:</label><br />
+          <input type="email" id="customer-email" required /><br /><br />
+
+          <label for="customer-phone">Phone:</label><br />
+          <input type="tel" id="customer-phone" /><br /><br />
+
+          <label for="custom-message">Message or Custom Order Request:</label
+          ><br />
+          <textarea
+            id="custom-message"
+            placeholder="Tell us what book, product, event or custom order you are interested in..."
+            required
+          ></textarea
+          ><br /><br />
+
+          <label class="checkbox-label">
+            <input type="checkbox" id="custom-order-check" />
+            This is a custom order request.
+          </label>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <h3 class="subscribe-title">Subscribe for Updates</h3>
+      <form>
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+      </form>
+
+      <p>Follow us for new arrivals, events and rare finds</p>
+      <p class="social-links">
+        <a href="#">Instagram</a> | <a href="#">Facebook</a> |
+        <a href="#">Pinterest</a>
+      </p>
+      <nav>
+        <a href="index.html">Home</a> | <a href="gallery.html">Collection</a> |
+        <a href="about.html">About</a> |
+        <a href="custom.html">Community & Donate</a>
+      </nav>
+
+      <p>© 2026 Book Haven Book Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

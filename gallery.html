@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Gallery - Book Haven Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+<div>
+    <img src="Assets/logo1.png" alt="Book Haven Book Store Logo" width="80">
+    <h1>Book Haven Book Store</h1>
+    <p><em>A whimsical book nook for curious minds...</em></p>
+</div>
+
+<nav>
+<div id="fullmenu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="custom.html">Community</a></li>
+    </ul>
+</div>
+
+<div id="burgermenu">
+    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+    </svg>
+
+    <ul id="burgermenulinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="custom.html">Community</a></li>
+    </ul>
+</div>
+</nav>
+</header>
+
+<hr>
+
+<main>
+
+<h2>Book Collection</h2>
+
+<button id="view-cart-button" class="gallery-btn">View Cart</button>
+
+<table>
+    <tr>
+        <td>
+            <img src="Assets/book1.png" width="100" alt="Brie Mine 4Ever book">
+            <p>Brie Mine 4Ever</p>
+            <button class="gallery-btn add-to-cart-button" data-item="Brie Mine 4Ever">Add to Cart</button>
+        </td>
+
+        <td>
+            <img src="Assets/book2.png" width="100" alt="Glory Riders book">
+            <p>Glory Riders</p>
+            <button class="gallery-btn add-to-cart-button" data-item="Glory Riders">Add to Cart</button>
+        </td>
+
+        <td>
+            <img src="Assets/book3.png" width="100" alt="Sorcerer's Chronicles book">
+            <p>Sorcerer’s Chronicles</p>
+            <button class="gallery-btn add-to-cart-button" data-item="Sorcerer’s Chronicles">Add to Cart</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <img src="Assets/book4.png" width="100" alt="Ball Magazine">
+            <p>Ball Magazine</p>
+            <button class="gallery-btn add-to-cart-button" data-item="Ball Magazine">Add to Cart</button>
+        </td>
+
+        <td>
+            <img src="Assets/book5.png" width="100" alt="Travel Magazine">
+            <p>Travel Magazine</p>
+            <button class="gallery-btn add-to-cart-button" data-item="Travel Magazine">Add to Cart</button>
+        </td>
+
+        <td>
+            <img src="Assets/book6.png" width="100" alt="Eat Magazine">
+            <p>Eat Magazine</p>
+            <button class="gallery-btn add-to-cart-button" data-item="Eat Magazine">Add to Cart</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <img src="Assets/book9.png" width="100" alt="Book Haven tote bag">
+            <p>Tote Bag</p>
+            <button class="gallery-btn add-to-cart-button" data-item="Tote Bag">Add to Cart</button>
+        </td>
+
+        <td>
+            <img src="Assets/book7.png" width="100" alt="Notebook">
+            <p>Notebook</p>
+            <button class="gallery-btn add-to-cart-button" data-item="Notebook">Add to Cart</button>
+        </td>
+
+        <td>
+            <img src="Assets/book8.png" width="100" alt="Sticker pack">
+            <p>Sticker Pack</p>
+            <button class="gallery-btn add-to-cart-button" data-item="Sticker Pack">Add to Cart</button>
+        </td>
+    </tr>
+</table>
+    <h2> 30 Day Refunds with Receipt & 20% off ONE Book with a Book Donation!</h2>
+
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <span id="close-cart-modal" class="close-cart">&times;</span>
+        <h2>Shopping Cart</h2>
+
+        <ul id="cart-items"></ul>
+
+        <button id="clear-cart-button" class="gallery-btn">Clear Cart</button>
+        <button id="process-order-button" class="gallery-btn">Process Order</button>
+    </div>
+</div>
+
+</main>
+
+<hr>
+
+<footer>
+
+    <h3 class="subscribe-title">Subscribe for Updates</h3>  
+
+    <form>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+    </form>
+
+    <p>Follow us for new arrivals, events and rare finds</p>
+    <p class="social-links">
+    <a href="#">Instagram</a> |
+    <a href="#">Facebook</a> |
+    <a href="#">Pinterest</a>
+</p>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="gallery.html">Collection</a> |
+        <a href="about.html">About</a> |
+        <a href="custom.html">Community & Donate</a>
+    </nav>
+
+    <p>© 2026 Book Haven Book Store</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
