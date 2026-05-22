@@ -57,7 +57,7 @@
     <p>Vane &amp; Volume is built on shared stories and quiet connections. Come for the shelf. Stay for the people who read it.</p>
   </div>
 
-  <section class="feature-grid" aria-label="Community highlights" style="margin-bottom: 0; border-bottom: 1px solid var(--border);">
+  <section class="feature-grid" aria-label="Community highlights">
     <article>
       <p class="number-label">01</p>
       <h2>Donate a Book</h2>
@@ -66,7 +66,7 @@
     <article>
       <p class="number-label">02</p>
       <h2>20% Off</h2>
-      <p>Every book donation earns a voucher for 20% off your next purchase. Good paper deserves good karma.</p>
+      <p>Every book donation earns a voucher for 20% off your next purchase. Good books should keep moving.</p>
     </article>
     <article>
       <p class="number-label">03</p>
@@ -86,17 +86,17 @@
       <h2>The store after dark is a different thing entirely.</h2>
     </div>
     <div>
-      <p>Join us during select evenings for events that move slower than the day. Midnight reading circles, various book club meets (check for dates) and quiet writing sessions where no one asks what you are working on.</p>
-      <p style="margin-top: 1rem;">Dates are posted weekly. Follow on Instagram or subscribe to shop notes to stay current.</p>
-      <a href="index.html#subscribeForm" class="secondary-button" style="display: inline-block; margin-top: 24px;">Get Shop Notes</a>
+      <p>Join us during select evenings for events that move slower than the day. Midnight reading circles, book club meets and quiet writing sessions where no one asks what you are working on.</p>
+      <p>Dates are posted weekly. Follow on Instagram or subscribe to shop notes to stay current.</p>
+      <a href="#subscribeForm" class="secondary-button" style="display: inline-block; margin-top: 24px;">Get Shop Notes</a>
     </div>
   </section>
 
-  <section class="newsletter-section" style="border-top: 1px solid var(--border); padding-top: 80px;">
+  <section class="newsletter-section">
     <div>
       <p class="eyebrow">Book Donation</p>
       <h2>Have a book that deserves a second life?</h2>
-      <p>Tell us what you'd like to share. We will take it from there and make sure it finds the right shelf.</p>
+      <p>Tell us what you would like to share. We will take it from there and help it find the right shelf.</p>
     </div>
 
     <form id="donation-form">
@@ -107,9 +107,23 @@
       <input type="email" id="donor-email" placeholder="reader@example.com" autocomplete="email" required>
 
       <label for="donation-books">Books to Donate</label>
-      <textarea id="donation-books" placeholder="Tell us about the titles you'd like to share..." required></textarea>
+      <textarea id="donation-books" placeholder="Tell us about the titles you would like to share..." required></textarea>
 
       <button type="submit" style="margin-top: 4px;">Submit Donation</button>
+    </form>
+  </section>
+
+  <section class="newsletter-section" aria-labelledby="events-newsletter-heading">
+    <div>
+      <p class="eyebrow">Shop Notes</p>
+      <h2 id="events-newsletter-heading">New books and events in one quiet note.</h2>
+      <p>Subscribe for new arrivals, reading nights and the occasional rare find.</p>
+    </div>
+    <form id="subscribeForm">
+      <label for="email">Email address</label>
+      <input id="email" type="email" placeholder="reader@example.com" autocomplete="email" required>
+      <button type="submit">Subscribe</button>
+      <p id="subscribeMessage" class="form-message" aria-live="polite"></p>
     </form>
   </section>
 
