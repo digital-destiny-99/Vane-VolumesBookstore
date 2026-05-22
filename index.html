@@ -1,120 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Book Haven Book Store</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Vane & Volume | Independent Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-    <div>
-        <img src="Assets/logo1.png" alt="Book Haven Book Store Logo" width="80">
-        <h1>Book Haven Book Store</h1>
-        <p><em>A whimsical book nook for curious minds...</em></p>
-    </div>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <nav>
-    <div id="fullmenu">
+<header class="site-header">
+  <div class="top-note" aria-hidden="true">
+    <p>Independent bookstore · curated shelves · neighborhood events</p>
+  </div>
+
+  <div class="header-main">
+    <a href="index.html" class="brand-mark" aria-label="Vane and Volume home">
+      <img src="Assets/logo1.png" alt="Vane and Volume Bookstore logo" width="52">
+      <span>Vane &amp; Volume</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <div id="fullmenu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="custom.html">Community</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Shelves</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="custom.html">Events</a></li>
         </ul>
-    </div>
+      </div>
 
-    <div id="burgermenu">
-        <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+      <div id="burgermenu">
+        <button id="menuButton" type="button" aria-label="Open navigation menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1.6em" viewBox="0 0 448 512" aria-hidden="true">
             <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-        </svg>
-
-        <ul id="burgermenulinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="custom.html">Community</a></li>
+          </svg>
+        </button>
+        <ul id="burgermenulinks" hidden>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Shelves</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="custom.html">Events</a></li>
         </ul>
-    </div>
-</nav>
+      </div>
+    </nav>
+  </div>
 </header>
 
-<hr>
+<main id="main-content">
 
-<main>
+  <section class="hero-section">
+    <div class="hero-copy">
+      <p class="eyebrow">Vane &amp; Volume Bookstore</p>
+      <h1>Books with good taste and a little room to wander.</h1>
+      <p>
+        A neighborhood bookstore for thoughtful readers, casual browsers,
+        small press finds and the kind of paperbacks that follow you home.
+      </p>
+      <div class="hero-actions">
+        <a href="gallery.html" class="primary-button">Browse the Shelves</a>
+        <a href="custom.html" class="secondary-button">See Events</a>
+      </div>
+    </div>
 
-<section>
-    <h2>Welcome to Book Haven</h2>
+    <aside class="hero-card" aria-label="Store feature">
+      <p class="card-label">This Week</p>
+      <h2>Staff picks, sidewalk reads and one very opinionated book club.</h2>
+      <p>
+        Stop in for new arrivals, reading gifts, notebooks, zines and quiet recommendations
+        from people who actually read the weird stuff.
+      </p>
+    </aside>
+  </section>
+
+  <section class="feature-grid" aria-label="Bookstore highlights">
+    <article>
+      <p class="number-label">01</p>
+      <h2>Curated Shelves</h2>
+      <p>Fiction, essays, design books, poetry, mysteries and small press releases selected with a real point of view.</p>
+    </article>
+    <article>
+      <p class="number-label">02</p>
+      <h2>Reading Goods</h2>
+      <p>Journals, bookmarks, magazines, cards and quiet little extras for people who like their desk to look slightly too interesting.</p>
+    </article>
+    <article>
+      <p class="number-label">03</p>
+      <h2>Community Table</h2>
+      <p>Book clubs, author nights, study hours, donation drives and local features rotate through the month.</p>
+    </article>
+    <article>
+      <p class="number-label">04</p>
+      <h2>Custom Finds</h2>
+      <p>Looking for a specific title, edition or gift? Send a request and we will help track down something considered.</p>
+    </article>
+  </section>
+
+  <section class="split-section">
+    <div>
+      <p class="eyebrow">The Shop Mood</p>
+      <h2>Clean shelves. Warm light. No rushed browsing.</h2>
+    </div>
     <p>
-        Book Haven Book Store is a cozy local bookshop for readers, students,
-        collectors and curious minds. We offer a thoughtful mix of books,
-        journals, magazines, gifts and unique finds for everyday reading
-        and special discoveries.
+      Built for people who like discovering books slowly. A little literary, a little downtown
+      and still easy to use. Browse by mood, ask for a recommendation or come in with no plan at all.
     </p>
-</section>
+  </section>
 
-<section>
-    <h2>Curated for Every Reader</h2>
-    <ul>
-        <li>Fiction, mystery, fantasy and atmospheric reads</li>
-        <li>Journals, notebooks, magazines and reading accessories</li>
-        <li>Rare finds, first editions and specialty book selections</li>
-    </ul>
-</section>
+  <section class="event-strip">
+    <div>
+      <p class="eyebrow">Next Event</p>
+      <h2>Paperback Social</h2>
+      <p>
+        Bring the book you keep recommending to everyone. Trade notes, meet other readers
+        and leave with a new title you did not plan on buying.
+      </p>
+    </div>
+    <a href="custom.html" class="primary-button">View Community Page</a>
+  </section>
 
-<section>
-    <h2>Events & Reading Experiences</h2>
-    <p>
-        Book Haven is more than a place to shop. We also create space for
-        readers to connect, study, write and discover new stories through
-        special events and community gatherings.
-    </p>
-    <ul>
-        <li>Book club meetings and reading circles</li>
-        <li>Quiet study and writing sessions</li>
-        <li>Special showcases for rare and featured books</li>
-        <li>After-hour events announced throughout the month</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Why Shop Here?</h2>
-    <ul>
-        <li>Handpicked books and products for different types of readers</li>
-        <li>A welcoming atmosphere for browsing, studying, and gift shopping</li>
-        <li>Custom order support for customers looking for something specific</li>
-    </ul>
-</section>
+  <section class="newsletter-section">
+    <div>
+      <p class="eyebrow">Shop Notes</p>
+      <h2>New arrivals without the inbox clutter.</h2>
+      <p>Get a short note when new books, events and rare finds land on the shelves.</p>
+    </div>
+    <form id="subscribeForm">
+      <label for="email">Email address</label>
+      <input id="email" type="email" placeholder="reader@example.com" autocomplete="email" required>
+      <button type="submit">Subscribe</button>
+      <p id="subscribeMessage" class="form-message" aria-live="polite"></p>
+    </form>
+  </section>
 
 </main>
 
-<hr>
-
 <footer>
-
-    <h3 class="subscribe-title">Subscribe for Updates</h3>  
-    <form>
-        <input type="email" placeholder="Enter your email">
-        <button type="submit">Subscribe</button>
-    </form>
-
-    <p>Follow us for new arrivals, events and rare finds</p>
-    <p class="social-links">
-    <a href="#">Instagram</a> |
-    <a href="#">Facebook</a> |
-    <a href="#">Pinterest</a>
-</p>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="about.html">About</a> |
-        <a href="custom.html">Community & Donate</a>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h2>Vane &amp; Volume</h2>
+      <p>Independent bookstore for curious shelves and good paper.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Shelves</a>
+      <a href="about.html">About</a>
+      <a href="custom.html">Events</a>
     </nav>
-
-    <p>© 2026 Book Haven Book Store</p>
-
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Pinterest</a>
+    </div>
+    <p class="copyright">© 2026 Vane &amp; Volume Bookstore</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>

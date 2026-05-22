@@ -1,137 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <title>Community - Book Haven</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Events | Vane &amp; Volume</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-  <body>
-    <header>
-      <div>
-        <img
-          src="Assets/logo1.png"
-          alt="Book Haven Book Store Logo"
-          width="80"
-        />
-        <h1>Book Haven Book Store</h1>
-        <p><em>A whimsical book nook for curious minds...</em></p>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="top-note" aria-hidden="true">
+    <p>Independent bookstore · curated shelves · neighborhood events</p>
+  </div>
+
+  <div class="header-main">
+    <a href="index.html" class="brand-mark" aria-label="Vane and Volume home">
+      <img src="Assets/logo1.png" alt="Vane and Volume Bookstore logo" width="52">
+      <span>Vane &amp; Volume</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <div id="fullmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Shelves</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="custom.html">Events</a></li>
+        </ul>
       </div>
 
-      <nav>
-        <div id="fullmenu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="custom.html">Community</a></li>
-          </ul>
-        </div>
-
-        <div id="burgermenu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="2em"
-            viewBox="0 0 448 512"
-          >
-            <path
-              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-            />
+      <div id="burgermenu">
+        <button id="menuButton" type="button" aria-label="Open navigation menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1.6em" viewBox="0 0 448 512" aria-hidden="true">
+            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
           </svg>
-
-          <ul id="burgermenulinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="custom.html">Community</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <hr />
-
-    <main>
-      <section>
-        <h2>Community & Donate a Book</h2>
-        <p>
-          Book Haven Book Store is built on shared stories and quiet
-          connections. Our community shelf is a space where books find new life,
-          passed from one curious mind to another.
-        </p>
-      </section>
-
-      <section>
-        <h3>How It Works</h3>
-        <ul>
-          <li>Donate gently used books or meaningful reads</li>
-          <li>Take a voucher for 20% off your next book with us!</li>
-          <li>We share them with local readers, students and creatives</li>
-          <li>Help grow a thoughtful, story-driven community</li>
+        </button>
+        <ul id="burgermenulinks" hidden>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Shelves</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="custom.html">Events</a></li>
         </ul>
-      </section>
+      </div>
+    </nav>
+  </div>
+</header>
 
-      <section>
-        <h3>After-Hour Community Nights 🌙</h3>
-        <p>
-          Join us during select evenings for community-focused events,
-          including:
-        </p>
-        <ul>
-          <li>Midnight reading circles</li>
-          <li>Various Book Club Meets (Check for Dates)</li>
-          <li>Quiet writing sessions</li>
-        </ul>
-      </section>
+<main id="main-content">
 
-      <section>
-        <h3>Submit a Donation</h3>
+  <div class="page-header">
+    <p class="eyebrow">Community &amp; Events</p>
+    <h1>Books find new life here.</h1>
+    <p>Vane &amp; Volume is built on shared stories and quiet connections. Come for the shelf. Stay for the people who read it.</p>
+  </div>
 
-        <p>
-          Have a book that deserves a second life? Let us know what you’d like
-          to share.
-        </p>
+  <section class="feature-grid" aria-label="Community highlights" style="margin-bottom: 0; border-bottom: 1px solid var(--border);">
+    <article>
+      <p class="number-label">01</p>
+      <h2>Donate a Book</h2>
+      <p>Bring a gently used title and we pass it to a local reader, student or creative who needs it.</p>
+    </article>
+    <article>
+      <p class="number-label">02</p>
+      <h2>20% Off</h2>
+      <p>Every book donation earns a voucher for 20% off your next purchase. Good paper deserves good karma.</p>
+    </article>
+    <article>
+      <p class="number-label">03</p>
+      <h2>Evening Events</h2>
+      <p>Midnight reading circles, book club meets and quiet writing sessions. Check the schedule below.</p>
+    </article>
+    <article>
+      <p class="number-label">04</p>
+      <h2>After-Hours</h2>
+      <p>Select evenings the store stays open for community nights. Small crowds, better conversations.</p>
+    </article>
+  </section>
 
-        <form>
-          <label>Name:</label><br />
-          <input type="text" required /><br /><br />
+  <section class="split-section">
+    <div>
+      <p class="eyebrow">After-Hour Community Nights</p>
+      <h2>The store after dark is a different thing entirely.</h2>
+    </div>
+    <div>
+      <p>Join us during select evenings for events that move slower than the day. Midnight reading circles, various book club meets (check for dates) and quiet writing sessions where no one asks what you are working on.</p>
+      <p style="margin-top: 1rem;">Dates are posted weekly. Follow on Instagram or subscribe to shop notes to stay current.</p>
+      <a href="index.html#subscribeForm" class="secondary-button" style="display: inline-block; margin-top: 24px;">Get Shop Notes</a>
+    </div>
+  </section>
 
-          <label>Email:</label><br />
-          <input type="email" required /><br /><br />
+  <section class="newsletter-section" style="border-top: 1px solid var(--border); padding-top: 80px;">
+    <div>
+      <p class="eyebrow">Book Donation</p>
+      <h2>Have a book that deserves a second life?</h2>
+      <p>Tell us what you'd like to share. We will take it from there and make sure it finds the right shelf.</p>
+    </div>
 
-          <label>Books to Donate:</label><br />
-          <textarea placeholder="Tell us about the books..."></textarea
-          ><br /><br />
+    <form id="donation-form">
+      <label for="donor-name">Name</label>
+      <input type="text" id="donor-name" placeholder="Your name" autocomplete="name" required>
 
-          <button type="submit">Submit Donation</button>
-        </form>
-      </section>
-    </main>
+      <label for="donor-email">Email</label>
+      <input type="email" id="donor-email" placeholder="reader@example.com" autocomplete="email" required>
 
-    <hr />
+      <label for="donation-books">Books to Donate</label>
+      <textarea id="donation-books" placeholder="Tell us about the titles you'd like to share..." required></textarea>
 
-    <footer>
-      <h3 class="subscribe-title">Subscribe for Updates</h3>
-      <form>
-        <input type="email" placeholder="Enter your email" />
-        <button type="submit">Subscribe</button>
-      </form>
+      <button type="submit" style="margin-top: 4px;">Submit Donation</button>
+    </form>
+  </section>
 
-      <p>Follow us for new arrivals, events and rare finds</p>
-      <p class="social-links">
-        <a href="#">Instagram</a> | <a href="#">Facebook</a> |
-        <a href="#">Pinterest</a>
-      </p>
-      <nav>
-        <a href="index.html">Home</a> | <a href="gallery.html">Collection</a> |
-        <a href="about.html">About</a> |
-        <a href="custom.html">Community & Donate</a>
-      </nav>
+</main>
 
-      <p>© 2026 Book Haven Book Store</p>
-    </footer>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h2>Vane &amp; Volume</h2>
+      <p>Independent bookstore for curious shelves and good paper.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Shelves</a>
+      <a href="about.html">About</a>
+      <a href="custom.html">Events</a>
+    </nav>
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Pinterest</a>
+    </div>
+    <p class="copyright">© 2026 Vane &amp; Volume Bookstore</p>
+  </div>
+</footer>
 
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>
