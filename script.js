@@ -77,12 +77,6 @@
 
     if (!form || !emailInput || !message) return;
 
-    var savedEmail = getSavedItem("vaneVolumeEmail");
-    if (savedEmail) {
-      emailInput.value = savedEmail;
-      message.textContent = "You are already on the shop list.";
-    }
-
     form.addEventListener("submit", function (event) {
       event.preventDefault();
 
@@ -94,8 +88,7 @@
         return;
       }
 
-      saveItem("vaneVolumeEmail", email);
-      message.textContent = "You are on the list. No spam. Just shelf notes.";
+      message.textContent = "Demo only: no email was sent or added to a mailing list.";
       form.reset();
     });
   }
@@ -290,7 +283,7 @@
         saveCart();
         renderCart();
         closeModal();
-        showPageMessage("Order received. We will be in touch shortly.");
+        showPageMessage("Demo checkout complete. No order was placed.");
       });
     }
   }
@@ -302,16 +295,7 @@
     form.addEventListener("submit", function (event) {
       event.preventDefault();
 
-      var orderData = {
-        name: getInputValue("customer-name"),
-        email: getInputValue("customer-email"),
-        phone: getInputValue("customer-phone"),
-        message: getInputValue("custom-message"),
-        customOrder: isChecked("custom-order-check")
-      };
-
-      saveItem("vaneVolumeCustomOrder", JSON.stringify(orderData));
-      showFormMessage(form, "Message received. We will follow up within two business days.");
+      showFormMessage(form, "This is a demo form. Your request was not sent.");
       form.reset();
     });
   }
@@ -322,7 +306,7 @@
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
-      showFormMessage(form, "Donation noted. Bring your books in anytime. Your voucher will be waiting.");
+      showFormMessage(form, "This is a demo form. No donation request was sent.");
       form.reset();
     });
   }
@@ -413,16 +397,6 @@
     window.setTimeout(function () {
       button.textContent = oldText;
     }, 1200);
-  }
-
-  function getInputValue(id) {
-    var input = document.getElementById(id);
-    return input ? input.value.trim() : "";
-  }
-
-  function isChecked(id) {
-    var input = document.getElementById(id);
-    return input ? input.checked : false;
   }
 
   function getSavedItem(key) {
